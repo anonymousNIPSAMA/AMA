@@ -1,0 +1,17 @@
+skip_if_exists: true
+parallel_num: 20
+run_tools_num: 2
+attack_tool: 
+  - target
+injection_method: direct_prompt_injection
+write_db: false 
+task_num: 5
+mcp: false
+llms:
+  - qwen3
+
+attack_types:
+  pure:
+    steal_parmas_num: [1]
+    defense_type:
+      - null
